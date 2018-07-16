@@ -10,8 +10,7 @@
   height: 80px;
   background-color: white;
   z-index: 1;
-  top: 0px;
-  visibility: hidden; /*Hidden Menu Bar*/
+
 }
 
 .logo {
