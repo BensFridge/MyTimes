@@ -1,0 +1,86 @@
+/*Start of Heading*/
+/*Flex Containers for Heading (Find a way to ustilize header as flex container alone)*/
+.header {
+  display: flex;
+  font-family: Verdana;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  z-index: 1;
+  top: 0px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/*End of Heading Flex Containers*/
+a {
+  color: black;
+}
+
+.header .logo {
+  flex: 1;
+}
+
+.header img {
+  padding: 10px 10px;
+  margin: 0;
+}
+
+
+.logo h1 {
+  font-size: 14px;
+  color: MediumAquamarine;
+}
+
+.navigation {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.navigation li {
+  font-size: 14px;
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+/*Start of Body*/
+
+.column {
+  border: 1px solid black;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 10px 10px;
+  top: 90px;
+}
+
+.column .large {
+  border: 1px solid black;
+  width: 630px;
+}
+
+.column .medium {
+  border: 1px solid black;
+  width: 300px;
+}
+
+.column .small {
+  border: 1px solid black;
+  width: 240px;
+}
+
+.story {
+  border: 1px solid black;
+}
