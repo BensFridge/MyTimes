@@ -16,18 +16,17 @@
 .logo {
   display: flex;
   align-items: center;
-  border: 1px solid black; /*To remove later*/
 }
 
 .navigation {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-right: 20px;
-  border: 1px solid black; /*To remove later*/
 }
 /*End of Heading Flex Containers*/
 a {
+  font-weight: bold;
+  font-size: 14px;
   color: black;
 }
 
@@ -42,6 +41,7 @@ a {
 
 
 .logo h1 {
+  font-weight: bold;
   font-size: 14px;
   color: MediumAquamarine;
 }
@@ -54,44 +54,35 @@ a {
 
 /*Start of Body*/
 
-/*
 .content {
-  display: flex;
-  justify-content: space-around;
+
 }
-*/
 
 .column {
-  border: 1px solid black;
   display: flex;
+  flex-grow: 1;
   position: relative;
   justify-content: space-around;
-  align-items: stretch;
-  padding: 10px 10px;
   top: 90px;
+  margin-bottom: 90px; /*Kinda Hackey*/
 }
 
 .column .large {
-  border: 1px solid black;
+  align-content: flex-start;
   width: 630px;
 }
 
 .column .medium {
-  border: 1px solid black;
   width: 300px;
 }
 
 .column .small {
-  border: 1px solid black;
   width: 240px;
 }
 
-.story,
 .headline {
-  border: 1px solid black;
-}
-
-.headline {
+  display: flex;
+  justify-content: center;
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
@@ -101,16 +92,33 @@ a {
 .headline.mainstory {
   font-size: 40px;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
+  height: 300px;
 }
 
 .headline.fall {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
+  height: 300px;
 }
 
 .headline.cameraman {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
+  height: 300px;
 }
 
 .headline.cat {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
+  height: 300px;
+}
+
+.story {
+
+}
+
+.story img {
+  width: 239px;
+}
+
+.story h2,
+.story p {
+    margin: 25px 0px;
 }
